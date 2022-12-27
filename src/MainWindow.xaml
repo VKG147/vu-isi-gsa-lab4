@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab4"
         mc:Ignorable="d"
-        Title="VAudioPlot" Height="419" Width="1200"
+        Title="VAudioPlot" Height="650" Width="1200"
         ResizeMode="NoResize">
     <Border Height="419" VerticalAlignment="Top">
         <Grid Margin="0,0,0,55">
@@ -18,11 +18,12 @@
             <Button Name="btnOpenFile" Margin="26,12,0,0" Click="btnOpenFile_Click" Grid.Column="1" HorizontalAlignment="Left" Width="92" Height="22" VerticalAlignment="Top">Browse</Button>
             <Label Margin="178,12,0,0" Height="24" VerticalAlignment="Top" Grid.Column="1" Content="Interval from:" HorizontalAlignment="Left" Width="86"/>
             <TextBox Name="txtboxIntervalFrom" Margin="280,13,0,0" Grid.Column="1" HorizontalAlignment="Left" Width="86" Height="23" VerticalAlignment="Top" TextChanged="txtboxIntervalFrom_TextChanged"/>
-            <WpfPlot Name="audioPlot" Margin="-10,95,642,0" Grid.Column="0" Grid.ColumnSpan="2"/>
+            <WpfPlot Name="audioPlot" Margin="28,235,604,-140" Grid.Column="0" Grid.ColumnSpan="2"/>
             <Label Margin="178,41,0,0" Height="26" VerticalAlignment="Top" Grid.Column="1" Content="Interval length:" HorizontalAlignment="Left" Width="96"/>
             <TextBox x:Name="txtboxIntervalLength" Margin="280,44,0,0" Grid.Column="1" HorizontalAlignment="Left" Width="86" Height="23" VerticalAlignment="Top" TextChanged="txtboxIntervalLength_TextChanged"/>
-            <WpfPlot x:Name="spectrePlot" Margin="268,95,32,0" Grid.Column="1"/>
+            <WpfPlot x:Name="spectrePlot" Margin="280,353,20,-258" Grid.Column="1"/>
             <Label Margin="370,13,0,0" Height="23" VerticalAlignment="Top" Grid.Column="1" Content="seconds" HorizontalAlignment="Left" Width="86"/>
+            <WpfPlot x:Name="cutAudioPlot" Margin="280,79,20,16" Grid.Column="1"/>
         </Grid>
     </Border>
 
